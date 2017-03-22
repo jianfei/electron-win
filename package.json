@@ -1,0 +1,26 @@
+{
+  "name": "electron-win",
+  "version": "0.0.1-alpha.0",
+  "description": "Window manager for electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo"
+  },
+  "keywords": [
+    "electron",
+    "window",
+    "manager"
+  ],
+  "author": "Jianfei",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jianfei/electron-win.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jianfei/electron-win/issues"
+  },
+  "homepage": "https://github.com/jianfei/electron-win",
+  "dependencies": {
+  }
+}
