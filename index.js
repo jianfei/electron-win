@@ -1,10 +1,12 @@
 const isMainProcess = process.type === 'browser';
 
+let win;
+
 if (isMainProcess) {
-    console.log('main');
+    win = require('./win');
 } else {
-    console.log('renderer');
+    const { remote } = require('electron');
+    win = remote.require(`${__dirname}/win`);
 }
 
-module.exports = {
-};
+module.exports = win;
