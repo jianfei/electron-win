@@ -7,8 +7,13 @@ You can use it both in main and renderer process.
 ## Usage
 
 ```javascript
-// in main or renderer process
+npm install --save electron-win
+
+// in main process
 const win = require('electron-win');
+
+// in renderer process
+const win = require('electron').remote.require('electron-win');
 ```
 
 ## API
@@ -31,9 +36,9 @@ Create and register a window.
 
 The options are almost the same as creating a native BrowserWindow in electron. [See this API](https://electron.atom.io/docs/api/browser-window/). There are some other properties you can use:
 
-- url: string. The url to load.
+- path: string. The url to load.
 
-**win.desctroyWindow(name)**
+**win.destroyWindow(name)**
 
 Close and destroy a window.
 
